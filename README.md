@@ -1,9 +1,10 @@
-# Personal Budget Tracker - Week 3 Assignment (Visual Design)
+# SpendWise Dashboard Shell - Week 4 Assignment
 
-This project continues the development of the Personal Budget & Expense Tracker, focusing entirely on visual design, branding, and CSS layout enhancements.
+This project establishes the foundational dashboard shell for the SpendWise capstone project using modern layout techniques.
 
-## What Was Improved & Features Added:
-1. **Intentional Color Palette:** Applied a cohesive modern color scheme (Indigo primary accent, Slate text, soft light background) across headings, buttons, and table headers.
-2. **Typography Integration:** Integrated Google Fonts (`Poppins` for clean, bold headings and `Inter` for readable body text) to build a professional visual hierarchy.
-3. **Table & Form Styling:** Upgraded table headers, cell padding, alternating row colors, interactive row hover states, and inputs with consistent border-radius and focus states.
-4. **CSS Box Model & Cards:** Utilized margins, padding, custom borders, and `border-radius` to transform major sections (Header, Form, Table, Instructions, Video) into clean, distinct visual cards.
+## Features & Implementation Details:
+1. **CSS Grid Layout:** Used for overall structure (dividing the dashboard into a fixed sidebar and a flexible main content area) and for responsive category cards.
+2. **Flexbox Arrangement:** Utilized inside the sidebar, header, and individual cards to align and space content cleanly.
+3. **CSS Custom Properties (:root):** Defined a comprehensive color palette using CSS variables for consistent brand, accent, surface, and text coloring, including full support for a dark theme via `prefers-color-scheme`.
+4. **Responsive Design:** Includes a media query for screens below 768px that collapses the grid into a single-column layout and reorganizes the sidebar navigation horizontally.
+5. **Card Micro-interactions:** Added smooth hover and keyboard focus animations (`transform: translateY(-4px)` with enhanced box-shadow) running under 250ms.

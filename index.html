@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Budget Tracker - Week 3</title>
+    <title>SpendWise Dashboard - Week 4</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,92 +12,118 @@
 </head>
 <body>
 
-    <!-- Main Header Section (Card) -->
-    <header id="main-header" class="card">
-        <img src="https://via.placeholder.com/60" alt="Budget Tracker Logo" class="logo">
-        <h1>My Budget Tracker</h1>
-        <p>Track your income and expenses in one clean place.</p>
-    </header>
+    <!-- Dashboard Grid Container -->
+    <div class="dashboard-container">
 
-    <!-- Collapsible Instructions (Card) -->
-    <details class="instructions card">
-        <summary>How to use this tracker</summary>
-        <p>Use the form below to add your daily expenses by entering the name, amount, category, and date. Your recorded items will appear in the expense table automatically.</p>
-    </details>
-
-    <!-- Add Expense Form Section (Card) -->
-    <section class="expense-section card">
-        <h2>Add Expense</h2>
-        <form>
-            <div class="input-group">
-                <input type="text" id="expense-name" placeholder="Expense Name">
-                <input type="number" id="expense-amount" placeholder="Amount ($)">
-                <select id="expense-category">
-                    <option value="" disabled selected>Select Category</option>
-                    <option value="Food">Food</option>
-                    <option value="Transport">Transport</option>
-                    <option value="Rent">Rent</option>
-                    <option value="Entertainment">Entertainment</option>
-                    <option value="Other">Other</option>
-                </select>
-                <input type="date" id="expense-date">
-                <button type="button" class="btn">Add Expense</button>
+        <!-- 1. Sidebar / Navigation Menu -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>SpendWise</h2>
             </div>
-        </form>
-    </section>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" tabindex="0">Dashboard</a>
+                <a href="#" class="nav-item" tabindex="0">Expenses</a>
+                <a href="#" class="nav-item" tabindex="0">Categories</a>
+                <a href="#" class="nav-item" tabindex="0">Analytics</a>
+                <a href="#" class="nav-item" tabindex="0">Settings</a>
+            </nav>
+        </aside>
 
-    <!-- Expense Table Section (Card) -->
-    <section class="table-section card">
-        <h2>Your Expenses</h2>
-        <table class="expense-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Amount ($)</th>
-                    <th>Category</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Groceries</td>
-                    <td>45.50</td>
-                    <td>Food</td>
-                    <td>2026-09-01</td>
-                </tr>
-                <tr>
-                    <td>Bus Ticket</td>
-                    <td>3.00</td>
-                    <td>Transport</td>
-                    <td>2026-09-02</td>
-                </tr>
-                <tr>
-                    <td>Monthly Rent</td>
-                    <td>500.00</td>
-                    <td>Rent</td>
-                    <td>2026-09-03</td>
-                </tr>
-                <tr>
-                    <td>Cinema Ticket</td>
-                    <td>15.00</td>
-                    <td>Entertainment</td>
-                    <td>2026-09-04</td>
-                </tr>
-                <tr>
-                    <td>Coffee</td>
-                    <td>4.50</td>
-                    <td>Other</td>
-                    <td>2026-09-05</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <!-- Main Content Area -->
+        <main class="main-content">
 
-    <!-- Multimedia Content: YouTube Video Section (Card) -->
-    <section class="video-section card">
-        <h2>Budgeting Tips</h2>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Budgeting Tips Video" frameborder="0" allowfullscreen></iframe>
-    </section>
+            <!-- 2. Header -->
+            <header class="dashboard-header">
+                <div class="header-title">
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome back! Here is your financial summary.</p>
+                </div>
+                <div class="header-profile">
+                    <span class="user-name">MAANAF 7</span>
+                    <div class="avatar">M</div>
+                </div>
+            </header>
+
+            <!-- Dashboard Stats / Category Cards Grid (At least 6 category cards) -->
+            <section class="cards-grid">
+                
+                <!-- Card 1: Food -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>Food & Dining</h3>
+                        <span class="badge">Expense</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="amount">$345.50</p>
+                        <span class="sub-text">18 Transactions</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Transport -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>Transport</h3>
+                        <span class="badge">Expense</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="amount">$120.00</p>
+                        <span class="sub-text">9 Transactions</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Rent -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>Rent & Housing</h3>
+                        <span class="badge">Fixed</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="amount">$850.00</p>
+                        <span class="sub-text">Monthly Payment</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Entertainment -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>Entertainment</h3>
+                        <span class="badge">Expense</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="amount">$75.20</p>
+                        <span class="sub-text">4 Transactions</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: Savings -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>Savings</h3>
+                        <span class="badge success">Goal</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="amount">$1,200.00</p>
+                        <span class="sub-text">Added this month</span>
+                    </div>
+                </div>
+
+                <!-- Card 6: Utilities -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>Utilities</h3>
+                        <span class="badge">Bills</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="amount">$190.40</p>
+                        <span class="sub-text">Water, Power, Internet</span>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
 
 </body>
 </html>
