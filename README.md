@@ -1,10 +1,9 @@
-# Personal Budget Tracker - Week 2 Assignment
+# Personal Budget Tracker - Week 3 Assignment (Visual Design)
 
-This project builds directly on top of the Week 1 static skeleton, expanding the Personal Budget & Expense Tracker with structured tables, upgradeable forms, multimedia elements, and advanced CSS styling.
+This project continues the development of the Personal Budget & Expense Tracker, focusing entirely on visual design, branding, and CSS layout enhancements.
 
-## What Was Built & Features Added:
-1. **Expense Table:** Replaced the placeholder text with a structured HTML table (`<table>`, `<thead>`, `<tbody>`, `<th>`, `<td>`) containing 5 rows of hardcoded sample data. Styled with collapsed borders, padding, colored headers, and alternating row background colors.
-2. **Upgraded Form:** Wrapped inputs inside a `<form>`, replaced the category text input with a `<select>` dropdown (Food, Transport, Rent, Entertainment, Other), added a button type="button", and assigned matching IDs (`id="expense-name"`, `id="expense-amount"`, `id="expense-category"`) for future JavaScript integration.
-3. **Multimedia Content:** Added an `<img>` logo in the header and embedded a YouTube video tutorial using an `<iframe>`.
-4. **Interactive Elements:** Added collapsible instructions using `<details>` and `<summary>`, added table row hover effects, and styled buttons with `cursor: pointer`.
-5. **Advanced CSS Selectors:** Applied descendant selectors (`.expense-table th`), direct child selectors (`.input-group > input`), position pseudo-classes (`tr:nth-child(even)`), and focus states (`input:focus`).
+## What Was Improved & Features Added:
+1. **Intentional Color Palette:** Applied a cohesive modern color scheme (Indigo primary accent, Slate text, soft light background) across headings, buttons, and table headers.
+2. **Typography Integration:** Integrated Google Fonts (`Poppins` for clean, bold headings and `Inter` for readable body text) to build a professional visual hierarchy.
+3. **Table & Form Styling:** Upgraded table headers, cell padding, alternating row colors, interactive row hover states, and inputs with consistent border-radius and focus states.
+4. **CSS Box Model & Cards:** Utilized margins, padding, custom borders, and `border-radius` to transform major sections (Header, Form, Table, Instructions, Video) into clean, distinct visual cards.

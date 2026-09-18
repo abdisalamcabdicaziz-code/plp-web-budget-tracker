@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Budget Tracker</title>
+    <title>My Budget Tracker - Week 3</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Main Header Section with Logo -->
-    <header id="main-header">
+    <!-- Main Header Section (Card) -->
+    <header id="main-header" class="card">
         <img src="https://via.placeholder.com/60" alt="Budget Tracker Logo" class="logo">
         <h1>My Budget Tracker</h1>
-        <p>Track your income and expenses in one place.</p>
+        <p>Track your income and expenses in one clean place.</p>
     </header>
 
-    <!-- Collapsible Instructions (Interactive Element) -->
-    <details class="instructions">
+    <!-- Collapsible Instructions (Card) -->
+    <details class="instructions card">
         <summary>How to use this tracker</summary>
         <p>Use the form below to add your daily expenses by entering the name, amount, category, and date. Your recorded items will appear in the expense table automatically.</p>
     </details>
 
-    <!-- Upgrade the Add Expense Form -->
-    <section class="expense-section">
+    <!-- Add Expense Form Section (Card) -->
+    <section class="expense-section card">
         <h2>Add Expense</h2>
         <form>
             <div class="input-group">
@@ -42,8 +46,8 @@
         </form>
     </section>
 
-    <!-- Expense Table Section -->
-    <section class="table-section">
+    <!-- Expense Table Section (Card) -->
+    <section class="table-section card">
         <h2>Your Expenses</h2>
         <table class="expense-table">
             <thead>
@@ -89,8 +93,8 @@
         </table>
     </section>
 
-    <!-- Multimedia Content: YouTube Video Embedding -->
-    <section class="video-section">
+    <!-- Multimedia Content: YouTube Video Section (Card) -->
+    <section class="video-section card">
         <h2>Budgeting Tips</h2>
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Budgeting Tips Video" frameborder="0" allowfullscreen></iframe>
     </section>
