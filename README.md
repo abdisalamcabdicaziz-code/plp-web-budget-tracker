@@ -1,10 +1,33 @@
-# SpendWise Dashboard Shell - Week 4 Assignment
+# SpendWise - JavaScript Foundation (Week 6)
 
-This project establishes the foundational dashboard shell for the SpendWise capstone project using modern layout techniques.
+This project extends the SpendWise dashboard by integrating foundational JavaScript concepts to process budgeting data, handle user input, perform financial calculations, and organize logic with functions.
 
 ## Features & Implementation Details:
-1. **CSS Grid Layout:** Used for overall structure (dividing the dashboard into a fixed sidebar and a flexible main content area) and for responsive category cards.
-2. **Flexbox Arrangement:** Utilized inside the sidebar, header, and individual cards to align and space content cleanly.
-3. **CSS Custom Properties (:root):** Defined a comprehensive color palette using CSS variables for consistent brand, accent, surface, and text coloring, including full support for a dark theme via `prefers-color-scheme`.
-4. **Responsive Design:** Includes a media query for screens below 768px that collapses the grid into a single-column layout and reorganizes the sidebar navigation horizontally.
-5. **Card Micro-interactions:** Added smooth hover and keyboard focus animations (`transform: translateY(-4px)` with enhanced box-shadow) running under 250ms.
+
+1. **What the SpendWise Project Does:**
+   SpendWise is a personal finance dashboard designed to help users track monthly budgets, view structured financial categories, and process income versus expense calculations.
+
+2. **JavaScript Concepts Implemented:**
+   - Variables (`let`) and Data Types (Numbers, Strings, Arrays, Objects).
+   - User Input Collection (`prompt()`).
+   - Mathematical Calculations (Totals and remaining balances).
+   - Reusable Functions and Control Flow (`for` loops, `if/else` statements).
+   - Console Output Formatting (`console.log`).
+
+3. **How Variables Are Being Used:**
+   - `totalMonthlyBudget`: Stores the numerical value of the user's available budget.
+   - `userName`: Stores the string representing the active user profile ("MAANAF 7").
+   - `expensesList`: Stores an array of expense objects, where each object holds a category name and its associated numerical amount.
+
+4. **How User Input Is Collected:**
+   - The application utilizes JavaScript's `prompt()` dialog box inside `initSpendWiseApp()` to allow users to input or update their custom monthly budget interactively when the page loads.
+
+5. **How Calculations Are Performed:**
+   - Total expenses are calculated by iterating through the `expensesList` array and accumulating each expense amount.
+   - The remaining balance is determined by subtracting total expenses from the `totalMonthlyBudget` using dedicated mathematical functions.
+
+6. **How Functions Help Organize the Code:**
+   - `calculateTotalExpenses(expenses)`: Encapsulates the logic for summing array items.
+   - `calculateRemainingBalance(budget, totalExpenses)`: Separates subtraction logic.
+   - `displayFinancialSummary(...)`: Handles formatting and output logging.
+   - `initSpendWiseApp()`: Manages initialization and user input workflow.
